@@ -103,5 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# Ignore all DS files
 .DS_Store
+
