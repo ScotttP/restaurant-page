@@ -13,20 +13,6 @@ body{
     padding: 0px;
     font-family: 'Merriweather', serif;
 }
-
-
-.aboutUs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: black;
-    opacity: .70;
-    margin-top: 25vh;
-    height: 40vh;
-    font-weight: 400;
-}
 p {
     margin-top: 2vh;
     text-align: center;
@@ -36,6 +22,60 @@ p {
     line-height: 2rem;
     font-weight: 300;
 }
+.navBarContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    opacity: .80;
+    border-bottom: 2px solid rgb(184, 157, 9);
+    height: 10vh;
+}
+.navBar{
+    display: flex;
+
+}
+ul > li{
+    list-style-type: none;
+    margin: 2rem;
+    transition: .5s;
+}
+
+ul > li:hover{
+   text-decoration: underline;
+   color: rgb(184, 157, 9);
+   cursor: pointer;
+}
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    opacity: .70;
+    height: 40vh;
+    font-weight: 400;
+    margin-top: 10em;
+    
+}
+.footerContainer{
+    margin-top: 250px;
+    background-color: black;
+    width: 100%;
+    background-color: black;
+    opacity: .80;
+}
+.logos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
 
 
 
