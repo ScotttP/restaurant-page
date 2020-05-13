@@ -1,4 +1,11 @@
-const functionOne = () => {
-    console.log('hi there')
+const homePage = () => {
+    const divContent = document.querySelector("#content");
+
+    const scottsPub = 
+    document.createElement('h1');
+    scottsPub.setAttribute('id', 'restaurantNamePageLoad')
+    scottsPub.textContent = `Scott's Pub`;
+
+    divContent.appendChild(scottsPub)
 }
-export{ functionOne }
+export{ homePage }

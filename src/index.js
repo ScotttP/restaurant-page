@@ -1,10 +1,11 @@
-import { functionOne } from './initialLoad';
-functionOne();
+import { homePage } from './initialLoad';
+homePage();
 
 const divContent = document.querySelector("#content");
 const aboutButton = document.querySelector('#about');
 const menuButton = document.querySelector('#menu');
 const contactButton = document.querySelector('#contact');
+const scottsPubButton = document.querySelector('#restaurantNameNavBar')
 
 aboutButton.addEventListener('click', () => {
     clear();
@@ -19,6 +20,11 @@ menuButton.addEventListener('click', () => {
 contactButton.addEventListener('click', () => {
     clear();
     contactContent();
+})
+
+scottsPubButton.addEventListener('click', () => {
+    clear();
+    homePage();
 })
 
 
@@ -62,7 +68,7 @@ const menuContent = () => {
         const entreeHeading = 
         document.createElement('h1');
         entreeHeading.setAttribute('id', 'entreeHeader');
-        entreeHeading.textContent = 'Entrees'
+        entreeHeading.textContent = 'Entreés'
         
         const entreeItemsUl = 
         document.createElement('ul');
