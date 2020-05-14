@@ -193,7 +193,12 @@ const contactContent = () => {
         document.createElement('form');
         formElement.setAttribute('class', 'contactForm');
         document.querySelector('.contactForm');
-
+        
+        const contactHeader = 
+        document.createElement('h1');
+        contactHeader.setAttribute('id', 'contactHeader');
+        contactHeader.textContent='Contact Us!';
+        
             const nameLabel = 
             document.createElement('label');
             nameLabel.setAttribute('id', 'nameLabel');
@@ -202,6 +207,7 @@ const contactContent = () => {
             const nameInput = 
             document.createElement('input');
             nameInput.setAttribute('id', 'nameInput');
+            nameInput.setAttribute('type', 'text')
 
             const emailLabel = 
             document.createElement('label');
@@ -211,25 +217,34 @@ const contactContent = () => {
             const emailInput = 
             document.createElement('input');
             emailInput.setAttribute('id', 'emailInput');
+            emailInput.setAttribute('type', 'email')
 
             const textLabel = 
             document.createElement('label');
             textLabel.setAttribute('id', 'textLabel');
-            textLabel.textContent = 'What Would You Like to Say? :';
+            textLabel.textContent = 'What Would You Like to Say?';
             
             const textInput = 
-            document.createElement('input');
+            document.createElement('textarea');
             textInput.setAttribute('id', 'textInput');
+            textInput.setAttribute('type', 'text');
 
+            const submitButton = 
+            document.createElement('button');
+            submitButton.setAttribute('id','submitButton');
+            submitButton.textContent = 'Submit';
+
+    formElement.appendChild(contactHeader)
     formElement.appendChild(nameLabel)
     formElement.appendChild(nameInput)
     formElement.appendChild(emailLabel)
     formElement.appendChild(emailInput)
     formElement.appendChild(textLabel)
     formElement.appendChild(textInput)
+    formElement.appendChild(submitButton)
 
     formDiv.appendChild(formElement)
-
+    
     divContent.appendChild(formDiv)
 }
 
