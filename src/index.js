@@ -1,6 +1,6 @@
 import { homePage } from './initialLoad';
 homePage();
-
+//need to create react app
 const divContent = document.querySelector("#content");
 const aboutButton = document.querySelector('#about');
 const menuButton = document.querySelector('#menu');
@@ -49,7 +49,7 @@ const aboutContent = () => {
     aboutUsDiv.appendChild(heading);
     aboutUsDiv.appendChild(paragraph);
     divContent.appendChild(aboutUsDiv);
-
+    
     
 }
 
